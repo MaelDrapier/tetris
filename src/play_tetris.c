@@ -129,7 +129,7 @@ void		play_tetris(t_tetriminos *tetris, t_debug *key, int nb_tetri)
   if (res == -1)
     {
       attron(COLOR_PAIR(1));
-      mvprintw((LINES / 2), ((COLS / 2) - 6), "You lose! :D");
+      mvprintw((LINES / 2), ((COLS / 2) - 4), "Game Over");
       attroff(COLOR_PAIR(1));
       refresh();
       sleep(3);
