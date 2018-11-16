@@ -8,11 +8,11 @@
 ## Last update Wed Dec 20 21:59:44 2017 mael drapier
 ##
 
-CC	=	gcc -g3
+CC	=	gcc
 
 RM	=	rm -f
 
-CFLAGS	+=	-W -Wall -Wextra #-Werror
+CFLAGS	+=	-W -Wall -Wextra -Werror
 CFLAGS	+=	-I include/
 
 LDFLAGS	=	-lncurses
