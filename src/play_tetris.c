@@ -64,7 +64,6 @@ void	do_pause(char *buf, t_debug *key, t_game *game, t_tetriminos *tetris)
     {
       y = LINES / 2;
       x = COLS / 2;
-      clear();
       display_game(game);
       display_tetrimino(game, tetris);
       display_others(game, key->info.next, tetris);
@@ -124,8 +123,7 @@ void		play_tetris(t_tetriminos *tetris, t_debug *key, int nb_tetri)
   if ((game.wndw = create_wndw(game.wndw, key->info)) == NULL)
     exit(RETURN_FAIL);
   game.up_map = create_up_map(game.up_map, key->info);
-  while ((res = game_loop(key, tetris, &game)) == 1)
-    clear();
+  while ((res = game_loop(key, tetris, &game)) == 1);
   if (res == -1)
     {
       attron(COLOR_PAIR(1));

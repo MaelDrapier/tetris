@@ -31,6 +31,7 @@ int	try_left(t_game *game, t_tetriminos tetri)
       i = 0;
       j = j + 1;
     }
+  clear();
   return (1);
 }
 
@@ -52,6 +53,7 @@ int	try_right(t_game *game, t_tetriminos tetri)
       i = 0;
       j = j + 1;
     }
+  clear();
   return (1);
 }
 

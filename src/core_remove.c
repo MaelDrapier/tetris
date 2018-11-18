@@ -69,7 +69,7 @@ void		remove_full(t_game *game)
   x = 1;
   y = 1;
   count = 0;
-  while (game->wndw[y] != '\0')
+  while (game->wndw[y] != NULL)
     {
       while (game->wndw[y][x] != '\0')
 	{

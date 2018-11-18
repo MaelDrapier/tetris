@@ -9,6 +9,7 @@
 */
 
 #include <stdlib.h>
+#include <ncurses.h>
 #include "tetris.h"
 
 int	get_random(int	max_tetri, t_tetriminos *tetris)
@@ -26,6 +27,7 @@ void	inc_tetri(t_game *game, t_tetriminos *tetris)
   game->inc++;
   if (game->inc > game->delay)
     {
+      clear();
       game->inc = 0;
       if (game->locked != 1)
 	game->y++;

@@ -9,6 +9,7 @@
 */
 
 #include <stdlib.h>
+#include <ncurses.h>
 #include "tetris.h"
 
 int	check_rotate_left(t_game *game, char **draw)
@@ -89,6 +90,7 @@ t_tetriminos	try_rotate(char *buf, t_debug *key,
     {
       if (check_rotate(game, tetri, game->turn + 1) == 1)
 	{
+	  clear();
 	  game->turn = game->turn + 1;
 	  if (game->turn > 3)
 	    game->turn = 0;
