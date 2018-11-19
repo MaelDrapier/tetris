@@ -72,3 +72,19 @@ $> cat -e tetriminos/inverted_L.tetrimino
 ```
 
 **You can check all the loaded tetriminos on launch with the** `--debug` **option.**
+
+<br>
+
+## Screenshots
+
+<p align="center">
+  <img src="screenshots/screenshot1.png"/>
+</p>
+<p align="center">
+  <img src="screenshots/screenshot2.png"/>
+</p>
+<p align="center">
+  <img src="screenshots/screenshot3.png"/>
+</p>
+
+
